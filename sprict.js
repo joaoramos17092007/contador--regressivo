@@ -1,1 +1,1 @@
-console.log{"baaaaaaaaaaaaaaaaaah"}
+console.log("oooooooooooooooooh")
