@@ -2,13 +2,14 @@
 
 :root{
     --background-topicos: #1e1e1e;
-    --barra-interativa: #82eff7;
+    --barra-interativa: #D90F0F;
     --branco: #fff;
-    --btn-ativo: #158882;
-    --borda: #000000;
+    --btn-ativo: #361717;
+    --borda: #151515;
     --black: #000;
     --fonte: "Anta", sans-serif;
-    --cor-txt: #0188a0;
+    --cor-txt: #FF0000;
+    --bg-abas: #0c0c0c;
 }
 
 body{
@@ -54,6 +55,8 @@ body{
     border-right: 2px solid var(--borda);
     border-top: none;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+
 }
 
 .btn:first-child{
@@ -64,10 +67,40 @@ body{
     display: block;
 }
 
-.active{
+.btn.active{
     background-color: var(--btn-ativo);
     border-bottom: 4px solid var(--barra-interativa);
 }
+
+.abas{
+    background-color: var(--bg-abas);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
+
+.conteudo.active{
+    display: block;
+}
+
+.conteudo{
+    display: none;
+}
+
+.titulo-conteudo{
+    font-size: 28px;
+    text-align: center;
+    font-weight: 400; 
+}
+
+.subtitulo-conteudo{
+    text-align: center;
+    color: var(--cor-txt);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+
+
 
 @media screen and (min-width: 768px) {
     
